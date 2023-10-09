@@ -1,0 +1,385 @@
+1=====>>>
+/*#include <windows.h>
+#include <GL/glut.h>
+#include <math.h>
+
+
+
+
+void circle(float radius, float cX, float cY)
+{
+   glBegin(GL_POLYGON);
+    for(int i=0;i<200;i++)
+        {
+            glColor3f(1.0,0,1.0);
+            float pi=3.1416;
+            float A=(i*2*pi)/200;
+            float r=radius;
+            float x = r * cos(A);
+            float y = r * sin(A);
+            glVertex2f(x+cX,y+cY);
+        }
+}
+void display() {
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glLineWidth(7.5);
+    circle(0.5,0,0.3);
+
+
+
+    //glVertex2f(0.3f,0.4f);
+    //glVertex2f(0.1f,0.4f);
+
+
+
+    glEnd();
+
+
+
+    glFlush();
+}
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutCreateWindow("OpenGL Setup Test");
+    //gluOrtho2D(-0.1,0.7,-0.1,0.3); // Create a window with the given title
+    glutInitWindowSize(320, 320);// Set the window's initial width & height
+    glutDisplayFunc(display);// Register display callback handler for window re-paint
+    glutMainLoop();           // Enter the event-processing loop
+    return 0;
+}
+*/
+#include <windows.h>
+#include <GL/glut.h>
+#include <math.h>
+
+void display() {
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+
+
+
+	glBegin(GL_POLYGON);
+    glColor3ub(166, 172, 175 );
+    glVertex2f(-1.0,0.0);
+    glVertex2f(-9.0,0.0);
+    glVertex2f(-9.0,4.0);
+    glVertex2f(-1.0,4.0);
+    glVertex2f(-1.0,0.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(112, 123, 124);
+    glVertex2f(-4.0,0.0);
+    glVertex2f(-6.0,0.0);
+    glVertex2f(-6.0,3.0);
+    glVertex2f(-4.0,3.0);
+    glVertex2f(-4.0,0.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(7, 240, 120 );
+    glVertex2f(-1.0,4.0);
+    glVertex2f(-9.0,4.0);
+    glVertex2f(-9.0,7.0);
+    glVertex2f(-1.0,7.0);
+    glVertex2f(-1.0,4.0);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-2.0,5.0);
+    glVertex2f(-3.0,5.0);
+    glVertex2f(-3.0,6.0);
+    glVertex2f(-2.0,6.0);
+    glVertex2f(-2.0,5.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-7.0,5.0);
+    glVertex2f(-7.0,6.0);
+    glVertex2f(-8.0,6.0);
+    glVertex2f(-8.0,5.0);
+    glVertex2f(-7.0,5.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(7, 98, 248);
+    glVertex2f(-1.0,7.0);
+    glVertex2f(-9.0,7.0);
+    glVertex2f(-9.0,10.0);
+    glVertex2f(-1.0,10.0);
+    glVertex2f(-1.0,7.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-2.0,8.0);
+    glVertex2f(-2.0,9.0);
+    glVertex2f(-3.0,9.0);
+    glVertex2f(-3.0,8.0);
+    glVertex2f(-2.0,8.0);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-7.0,8.0);
+    glVertex2f(-8.0,8.0);
+    glVertex2f(-8.0,9.0);
+    glVertex2f(-7.0,9.0);
+    glVertex2f(-7.0,8.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 0, 232);
+    glVertex2f(-1.0,10.0);
+    glVertex2f(-9.0,10.0);
+    glVertex2f(-9.0,13.0);
+    glVertex2f(-1.0,13.0);
+    glVertex2f(-1.0,10.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-2.0,11.0);
+    glVertex2f(-3.0,11.0);
+    glVertex2f(-3.0,12.0);
+    glVertex2f(-2.0,12.0);
+    glVertex2f(-2.0,11.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-7.0,11.0);
+    glVertex2f(-8.0,11.0);
+    glVertex2f(-8.0,12.0);
+    glVertex2f(-7.0,12.0);
+    glVertex2f(-7.0,11.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(245, 157, 69 );
+    glVertex2f(-1.0,13.0);
+    glVertex2f(-9.0,13.0);
+    glVertex2f(-9.0,16.0);
+    glVertex2f(-1.0,16.0);
+    glVertex2f(-1.0,13.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-2.0,14.0);
+    glVertex2f(-3.0,14.0);
+    glVertex2f(-3.0,15.0);
+    glVertex2f(-2.0,15.0);
+    glVertex2f(-2.0,14.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(9, 252, 222 );
+    glVertex2f(-8.0,14.0);
+    glVertex2f(-8.0,15.0);
+    glVertex2f(-7.0,15.0);
+    glVertex2f(-7.0,14.0);
+    glVertex2f(-8.0,14.0);
+    glEnd();
+
+
+
+
+
+	glFlush();
+}
+
+
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
+	glutInitWindowSize(1200,1000);
+    glutCreateWindow("Building");
+	glClearColor(1.0,1.0,1.0,1.0);
+	gluOrtho2D(-20.0,20.0,-20.0,20.0);
+	glutDisplayFunc(display);
+	glutMainLoop();
+	return 0;
+}
+
+
+2=====>>>
+/*#include <windows.h>
+#include <GL/glut.h>
+#include <math.h>
+
+
+
+
+void circle(float radius, float cX, float cY)
+{
+   glBegin(GL_POLYGON);
+    for(int i=0;i<200;i++)
+        {
+            glColor3f(1.0,0,1.0);
+            float pi=3.1416;
+            float A=(i*2*pi)/200;
+            float r=radius;
+            float x = r * cos(A);
+            float y = r * sin(A);
+            glVertex2f(x+cX,y+cY);
+        }
+}
+void display() {
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glLineWidth(7.5);
+    circle(0.5,0,0.3);
+
+
+
+    //glVertex2f(0.3f,0.4f);
+    //glVertex2f(0.1f,0.4f);
+
+
+
+    glEnd();
+
+
+
+    glFlush();
+}
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutCreateWindow("OpenGL Setup Test");
+    //gluOrtho2D(-0.1,0.7,-0.1,0.3); // Create a window with the given title
+    glutInitWindowSize(320, 320);// Set the window's initial width & height
+    glutDisplayFunc(display);// Register display callback handler for window re-paint
+    glutMainLoop();           // Enter the event-processing loop
+    return 0;
+}
+*/
+#include <windows.h>
+#include <GL/glut.h>
+#include <math.h>
+
+void display() {
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+
+
+
+	glBegin(GL_POLYGON);
+    glColor3ub(166, 172, 175 );
+    glVertex2f(2.0,0.0);
+    glVertex2f(3.0,0.0);
+    glVertex2f(3.0,12.0);
+    glVertex2f(2.0,12.0);
+    glVertex2f(2.0,0.0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(97, 106, 107 );
+    glVertex2f(2.0,12.0);
+    glVertex2f(3.0,12.0);
+    glVertex2f(4.25,14.0);
+    glVertex2f(0.75,14.0);
+    glVertex2f(2.0,12.0);
+    glEnd();
+
+
+
+
+	glFlush();
+}
+
+
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
+	glutInitWindowSize(1200,1000);
+    glutCreateWindow("Lamp Post");
+	glClearColor(1.0,1.0,1.0,1.0);
+	gluOrtho2D(-20.0,20.0,-20.0,20.0);
+	glutDisplayFunc(display);
+	glutMainLoop();
+	return 0;
+}
+
+4====>>>
+#include <windows.h>
+#include <GL/glut.h>
+#include <math.h>
+
+void display() {
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+
+
+
+	glBegin(GL_POLYGON);
+    glColor3ub(166, 172, 175 );
+     glVertex2f(-2.0,-1.0);
+     glVertex2f(-11.0,-1.0);
+     glVertex2f(-11.0,-5.0);
+     glVertex2f(-2.0,-5.0);
+     glVertex2f(-2.0,-1.0);
+
+    glEnd();
+
+     glBegin(GL_POLYGON);
+     glColor3ub(155, 89, 182  );
+     glVertex2f(-2.0,-5.0);
+     glVertex2f(-11.0,-5.0);
+     glVertex2f(-12.50,-7.5);
+     glVertex2f(-3.50,-7.5);
+     glVertex2f(-2.0,-5.0);
+     glEnd();
+
+     glBegin(GL_POLYGON);
+     glColor3ub(27, 38, 49 );
+     glVertex2f(-3.50,-7.5);
+     glVertex2f(-3.5,-10.0);
+     glVertex2f(-4.2,-10.0);
+     glVertex2f(-4.2,-7.5);
+     glVertex2f(-3.50,-7.5);
+     glEnd();
+
+      glBegin(GL_POLYGON);
+     glColor3ub(27, 38, 49 );
+     glVertex2f(-12.50,-7.5);
+     glVertex2f(-11.7,-7.50);
+     glVertex2f(-11.7,-10.0);
+     glVertex2f(-12.5,-10.0);
+     glVertex2f(-12.50,-7.5);
+     glEnd();
+
+      glBegin(GL_POLYGON);
+     glColor3ub(27, 38, 49 );
+     glVertex2f(-2.0,-5.0);
+     glVertex2f(-2.0,-7.5);
+     glVertex2f(-2.50,-7.5);
+     glVertex2f(-2.50,-5.8);
+     glVertex2f(-2.0,-5.0);
+     glEnd();
+     
+      
+
+
+
+
+	glFlush();
+}
+
+
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
+	glutInitWindowSize(1200,1000);
+    glutCreateWindow("Bench");
+	glClearColor(1.0,1.0,1.0,1.0);
+	gluOrtho2D(-20.0,20.0,-20.0,20.0);
+	glutDisplayFunc(display);
+	glutMainLoop();
+	return 0;
+}
