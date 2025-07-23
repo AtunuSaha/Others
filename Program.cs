@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            /*
+            
             int x = 10;
             int y = 20;
             double result = 200.4434;
             bool alive = true;
             char letter = 'A';
-            string name = "John Doe";
+            string Yname = "John Doe";
 
 
             Console.WriteLine(x);
@@ -18,16 +18,17 @@
             Console.WriteLine(result);
             Console.WriteLine("Are you alive: " + alive);
             Console.WriteLine("First letter is: " + letter);
-            Console.WriteLine("The name is: " + name);
+            Console.WriteLine("The name is: " + Yname);
             Console.WriteLine();
 
             const double pi = 3.14159;
             Console.WriteLine(pi);
-            */
+            Console.WriteLine();
+            
 
             // ------------------------------------------------------------ //
 
-            /*
+            
             
             // Type conversion
             double a = 123.23453;
@@ -45,14 +46,18 @@
             string i = "true";
             bool j = Convert.ToBoolean(i);
 
+            char k = 'B';
+            string l = Convert.ToString(k);
+
 
             Console.WriteLine(b);
             Console.WriteLine(d);
             Console.WriteLine(f);
             Console.WriteLine(h);
             Console.WriteLine(j);
+            Console.WriteLine(l);
 
-            */
+
             Console.Write("Enter your name: ");
             string name = Console.ReadLine();
 
